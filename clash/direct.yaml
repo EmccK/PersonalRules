@@ -1,0 +1,30 @@
+# 个人直连规则
+payload:
+  # 精确域名
+  - DOMAIN,shared.oaifree.com
+  - DOMAIN,elysia.h-e.top
+
+  # 域名后缀
+  - DOMAIN-SUFFIX,time.windows.com
+  - DOMAIN-SUFFIX,dns.alidns.com
+  - DOMAIN-SUFFIX,doh.pub
+  - DOMAIN-SUFFIX,m-team.cc
+  - DOMAIN-SUFFIX,m-team.io
+  - DOMAIN-SUFFIX,sharedchat.fun
+
+  # 域名关键字
+  - DOMAIN-KEYWORD,baidu
+  - DOMAIN-KEYWORD,bybit
+
+  # 国内 DNS
+  - IP-CIDR,219.146.1.66/32,no-resolve
+  - IP-CIDR,219.147.1.66/32,no-resolve
+  - IP-CIDR,119.29.29.29/32,no-resolve
+  - IP-CIDR,223.5.5.5/32,no-resolve
+  - IP-CIDR,223.6.6.6/32,no-resolve
+  - IP-CIDR,180.76.76.76/32,no-resolve
+  - IP-CIDR,114.114.114.114/32,no-resolve
+  - IP-CIDR,114.114.115.115/32,no-resolve
+
+  # 局域网服务
+  - IP-CIDR,10.69.33.12/32,no-resolve
