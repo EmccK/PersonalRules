@@ -9,6 +9,7 @@ const textFiles = [
   '.editorconfig',
   '.gitignore',
   'package.json',
+  'clash/claude.yaml',
   'clash/direct.yaml',
   'clash/proxy.yaml',
   'clash/override.yaml',
@@ -36,7 +37,7 @@ for (const file of textFiles) {
   })
 }
 
-for (const file of ['clash/direct.yaml', 'clash/proxy.yaml']) {
+for (const file of ['clash/claude.yaml', 'clash/direct.yaml', 'clash/proxy.yaml']) {
   await validateRulePayload(file)
 }
 

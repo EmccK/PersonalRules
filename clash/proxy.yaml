@@ -3,9 +3,6 @@ payload:
   # 精确域名
   - DOMAIN,api.msn.com
 
-  # AI 服务
-  - DOMAIN-SUFFIX,claude.com
-
   # Cloudflare
   - DOMAIN-KEYWORD,cloudflare
   - DOMAIN-SUFFIX,pages.dev

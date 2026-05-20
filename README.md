@@ -6,6 +6,7 @@
 
 - `clash/direct.yaml`：个人直连规则
 - `clash/proxy.yaml`：个人代理规则
+- `clash/claude.yaml`：Claude 代理规则
 - `clash/override.yaml`：Clash 覆写配置
 - `sing-box/transform.js`：Sing-box 转换脚本
 
