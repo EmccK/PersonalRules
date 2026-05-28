@@ -237,8 +237,8 @@ async function validateOverride(file) {
     fail(`${file} 开启 respect-rules 时需要配置 proxy-server-nameserver`)
   }
 
-  if (!content.includes('#PROXY')) {
-    fail(`${file} 境外 DNS 未显式指定 PROXY 出口`)
+  if (!content.includes('#一键连')) {
+    fail(`${file} 境外 DNS 未显式指定一键连出口`)
   }
 }
 

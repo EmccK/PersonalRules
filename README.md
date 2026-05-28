@@ -41,11 +41,13 @@ npm run validate
 - `tun.dns-hijack` 劫持 53 端口 DNS 查询
 - `dns.enhanced-mode: fake-ip`
 - `dns.respect-rules: true`
-- 境外 DoH 显式使用 `#PROXY`
+- 境外 DoH 显式使用 `#一键连`
 - `direct-nameserver` 仅用于直连流量
 - 海外 UDP/443 QUIC 默认拦截，减少规则绕过
 
 规则文件同步到当前仓库后，运行时 `rule-providers` 只引用本仓库 raw 地址。外部上游只在 `npm run sync` 时使用；如果同步失败且本地已有规则，脚本会保留现有文件。
+
+策略组参考 OneTouch 简化为：`一键连`、`人工智能`、`社交平台`、`国际媒体`、`国内流量`、`手动选择`。
 
 ## 自动化
 

@@ -10,6 +10,9 @@ profile:
   store-selected: true
   store-fake-ip: true
 
+experimental:
+  quic-go-disable-gso: true
+
 sniffer:
   enable: true
   sniff:
@@ -58,106 +61,114 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   nameserver:
-    - https://1.1.1.1/dns-query#PROXY
-    - https://8.8.8.8/dns-query#PROXY
+    - https://1.1.1.1/dns-query#一键连
+    - https://8.8.8.8/dns-query#一键连
   fallback:
-    - https://9.9.9.9/dns-query#PROXY
-    - https://1.0.0.1/dns-query#PROXY
+    - https://9.9.9.9/dns-query#一键连
+    - https://1.0.0.1/dns-query#一键连
   fallback-filter:
     geoip: true
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
   fake-ip-filter:
+    - rule-set:Direct
+    - rule-set:Private
+    - rule-set:China
     - +.lan
     - +.local
     - +.localhost
     - +.miwifi.com
     - +.routerlogin.com
     - +.push.apple.com
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time-ios.apple.com
     - "*.ntp.org.cn"
     - "*.pool.ntp.org"
 
 proxy-groups:
-  - name: PROXY
+  - name: 一键连
     type: select
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
     proxies:
-      - AUTO
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
+      - 故障转移
+      - 香港自动
+      - 台湾自动
+      - 日本自动
+      - 狮城自动
+      - 韩国自动
+      - 美国自动
+      - 欧洲自动
+      - 手动选择
       - DIRECT
 
-  - name: AUTO
-    type: url-test
+  - name: 人工智能
+    type: select
+    proxies:
+      - 美国自动
+      - 一键连
+      - 日本自动
+      - 狮城自动
+      - 台湾自动
+      - 香港自动
+      - 手动选择
+
+  - name: 社交平台
+    type: select
+    proxies:
+      - 一键连
+      - 香港自动
+      - 台湾自动
+      - 日本自动
+      - 狮城自动
+      - 美国自动
+      - 手动选择
+
+  - name: 国际媒体
+    type: select
+    proxies:
+      - 一键连
+      - 香港自动
+      - 台湾自动
+      - 日本自动
+      - 狮城自动
+      - 美国自动
+      - 手动选择
+
+  - name: 国内流量
+    type: select
+    proxies:
+      - DIRECT
+      - 一键连
+      - 香港自动
+      - 台湾自动
+      - 日本自动
+      - 狮城自动
+      - 美国自动
+      - 手动选择
+
+  - name: 手动选择
+    type: select
     include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)).*
+
+  - name: 故障转移
+    type: fallback
+    hidden: true
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-
-  - name: AIGC
-    type: select
+    lazy: true
     proxies:
-      - PROXY
-      - US AUTO
-      - SG AUTO
-      - JP AUTO
-      - TW AUTO
-      - HK AUTO
-
-  - name: SOCIAL
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-
-  - name: MEDIA
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-
-  - name: GOOGLE
-    type: select
-    proxies:
-      - PROXY
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-
-  - name: MICROSOFT
-    type: select
-    proxies:
-      - PROXY
+      - 香港自动
+      - 台湾自动
+      - 日本自动
+      - 狮城自动
+      - 韩国自动
+      - 美国自动
+      - 欧洲自动
+      - 手动选择
       - DIRECT
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
 
-  - name: HK AUTO
+  - name: 香港自动
     type: url-test
+    hidden: true
     include-all: true
     filter: (?i)香港|Hong Kong|HK|HKG
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
@@ -165,8 +176,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: TW AUTO
+  - name: 台湾自动
     type: url-test
+    hidden: true
     include-all: true
     filter: (?i)台湾|Taiwan|TW|TPE|TSA|KHH
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
@@ -174,17 +186,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: SG AUTO
+  - name: 日本自动
     type: url-test
-    include-all: true
-    filter: (?i)新加坡|Singapore|SG|SIN
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-
-  - name: JP AUTO
-    type: url-test
+    hidden: true
     include-all: true
     filter: (?i)日本|Japan|JP|NRT|HND|KIX
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
@@ -192,8 +196,29 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: US AUTO
+  - name: 狮城自动
     type: url-test
+    hidden: true
+    include-all: true
+    filter: (?i)新加坡|Singapore|SG|SIN
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: 韩国自动
+    type: url-test
+    hidden: true
+    include-all: true
+    filter: (?i)韩国|Korea|KR|KOR|ICN
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: 美国自动
+    type: url-test
+    hidden: true
     include-all: true
     filter: (?i)美国|United States|USA|US|SJC|LAX|SFO|SEA|JFK
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
@@ -201,72 +226,43 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: GLOBAL
-    type: select
+  - name: 欧洲自动
+    type: url-test
+    hidden: true
     include-all: true
-    proxies:
-      - PROXY
-      - AUTO
-      - AIGC
-      - SOCIAL
-      - MEDIA
-      - GOOGLE
-      - MICROSOFT
-      - HK AUTO
-      - TW AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - DIRECT
+    filter: (?i)英国|法国|德国|荷兰|欧洲|Europe|UK|GB|FR|DE|NL|EU|LHR|FRA|AMS|CDG
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
 
 rules:
-  - RULE-SET,Advertising,REJECT
-  - RULE-SET,Tracking,REJECT
   - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((GEOIP,CN)))),REJECT
   - RULE-SET,personal_direct,DIRECT
   - RULE-SET,Private,DIRECT
   - RULE-SET,Direct,DIRECT
-  - RULE-SET,Download,DIRECT
   - RULE-SET,AppleCN,DIRECT
-  - RULE-SET,China,DIRECT
-  - RULE-SET,personal_proxy,PROXY
-  - RULE-SET,personal_claude,AIGC
-  - RULE-SET,AI,AIGC
-  - RULE-SET,Claude,AIGC
-  - RULE-SET,OpenAI,AIGC
-  - RULE-SET,Gemini,AIGC
-  - RULE-SET,Telegram,SOCIAL
-  - RULE-SET,Twitter,SOCIAL
-  - RULE-SET,Instagram,SOCIAL
-  - RULE-SET,Facebook,SOCIAL
-  - RULE-SET,SocialMedia,SOCIAL
-  - RULE-SET,YouTube,MEDIA
-  - RULE-SET,Netflix,MEDIA
-  - RULE-SET,Disney,MEDIA
-  - RULE-SET,HBO,MEDIA
-  - RULE-SET,Spotify,MEDIA
-  - RULE-SET,Emby,MEDIA
-  - RULE-SET,Streaming,MEDIA
-  - RULE-SET,Google,GOOGLE
-  - RULE-SET,Microsoft,MICROSOFT
-  - RULE-SET,OneDrive,MICROSOFT
-  - RULE-SET,GitHub,PROXY
-  - RULE-SET,Cloudflare,PROXY
-  - RULE-SET,Proxy,PROXY
-  - RULE-SET,AdvertisingIP,REJECT,no-resolve
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,XPTV,DIRECT
+  - RULE-SET,China,国内流量
+  - RULE-SET,personal_proxy,一键连
+  - RULE-SET,personal_claude,人工智能
+  - RULE-SET,AI,人工智能
+  - RULE-SET,Telegram,社交平台
+  - RULE-SET,SocialMedia,社交平台
+  - RULE-SET,YouTube,国际媒体
+  - RULE-SET,Spotify,国际媒体
+  - RULE-SET,Netflix,国际媒体
+  - RULE-SET,Disney,国际媒体
+  - RULE-SET,HBO,国际媒体
+  - RULE-SET,Proxy,一键连
   - RULE-SET,PrivateIP,DIRECT,no-resolve
-  - RULE-SET,AIIP,AIGC,no-resolve
-  - RULE-SET,TelegramIP,SOCIAL,no-resolve
-  - RULE-SET,SocialMediaIP,SOCIAL,no-resolve
-  - RULE-SET,FacebookIP,SOCIAL,no-resolve
-  - RULE-SET,StreamingIP,MEDIA,no-resolve
-  - RULE-SET,NetflixIP,MEDIA,no-resolve
-  - RULE-SET,EmbyIP,MEDIA,no-resolve
-  - RULE-SET,GoogleIP,GOOGLE,no-resolve
-  - RULE-SET,CloudflareIP,PROXY,no-resolve
-  - RULE-SET,ProxyIP,PROXY,no-resolve
-  - RULE-SET,ChinaIP,DIRECT,no-resolve
-  - MATCH,PROXY
+  - RULE-SET,TelegramIP,社交平台,no-resolve
+  - RULE-SET,SocialMediaIP,社交平台,no-resolve
+  - RULE-SET,NetflixIP,国际媒体,no-resolve
+  - RULE-SET,ProxyIP,一键连,no-resolve
+  - RULE-SET,ChinaIP,国内流量,no-resolve
+  - MATCH,一键连
 
 rule-providers:
   personal_direct:
@@ -290,20 +286,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/personal_claude.yaml
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/claude.yaml
-  Advertising:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Advertising.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Advertising.txt
-  Tracking:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Tracking.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Tracking.txt
   Private:
     type: http
     behavior: domain
@@ -318,13 +300,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/Direct.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Direct.txt
-  Download:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Download.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Download.txt
   AppleCN:
     type: http
     behavior: domain
@@ -332,13 +307,20 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/AppleCN.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/AppleCN.txt
-  China:
+  Download:
     type: http
     behavior: domain
     format: text
     interval: 86400
-    path: ./ruleset/domain/China.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/China.txt
+    path: ./ruleset/domain/Download.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Download.txt
+  XPTV:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/XPTV.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/XPTV.txt
   AI:
     type: http
     behavior: domain
@@ -346,27 +328,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/AI.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/AI.txt
-  Claude:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Claude.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Claude.txt
-  OpenAI:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/OpenAI.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/OpenAI.txt
-  Gemini:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Gemini.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Gemini.txt
   Telegram:
     type: http
     behavior: domain
@@ -374,27 +335,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/Telegram.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Telegram.txt
-  Twitter:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Twitter.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Twitter.txt
-  Instagram:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Instagram.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Instagram.txt
-  Facebook:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Facebook.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Facebook.txt
   SocialMedia:
     type: http
     behavior: domain
@@ -409,6 +349,13 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/YouTube.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/YouTube.txt
+  Spotify:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Spotify.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Spotify.txt
   Netflix:
     type: http
     behavior: domain
@@ -430,62 +377,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/HBO.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/HBO.txt
-  Spotify:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Spotify.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Spotify.txt
-  Emby:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Emby.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Emby.txt
-  Streaming:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Streaming.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Streaming.txt
-  Google:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Google.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Google.txt
-  Microsoft:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Microsoft.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Microsoft.txt
-  OneDrive:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/OneDrive.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/OneDrive.txt
-  GitHub:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/GitHub.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/GitHub.txt
-  Cloudflare:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    path: ./ruleset/domain/Cloudflare.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Cloudflare.txt
   Proxy:
     type: http
     behavior: domain
@@ -493,13 +384,13 @@ rule-providers:
     interval: 86400
     path: ./ruleset/domain/Proxy.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Proxy.txt
-  AdvertisingIP:
+  China:
     type: http
-    behavior: ipcidr
+    behavior: domain
     format: text
     interval: 86400
-    path: ./ruleset/ip/Advertising.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Advertising.txt
+    path: ./ruleset/domain/China.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/China.txt
   PrivateIP:
     type: http
     behavior: ipcidr
@@ -507,13 +398,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/ip/Private.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Private.txt
-  AIIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/AI.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/AI.txt
   TelegramIP:
     type: http
     behavior: ipcidr
@@ -528,20 +412,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/ip/SocialMedia.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/SocialMedia.txt
-  FacebookIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/Facebook.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Facebook.txt
-  StreamingIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/Streaming.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Streaming.txt
   NetflixIP:
     type: http
     behavior: ipcidr
@@ -549,27 +419,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/ip/Netflix.txt
     url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Netflix.txt
-  EmbyIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/Emby.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Emby.txt
-  GoogleIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/Google.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Google.txt
-  CloudflareIP:
-    type: http
-    behavior: ipcidr
-    format: text
-    interval: 86400
-    path: ./ruleset/ip/Cloudflare.txt
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Cloudflare.txt
   ProxyIP:
     type: http
     behavior: ipcidr
