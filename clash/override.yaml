@@ -1,254 +1,586 @@
-rule-providers:
-  personal_direct:
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/direct.yaml
-    path: ./ruleset/personal_direct.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  personal_proxy:
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/proxy.yaml
-    path: ./ruleset/personal_proxy.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  private:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml
-    path: ./ruleset/private.yaml
-    behavior: domain
-    interval: 86400
-    format: yaml
-    type: http
-  cn_domain:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml
-    path: ./ruleset/cn_domain.yaml
-    behavior: domain
-    interval: 86400
-    format: yaml
-    type: http
-  telegram_domain:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
-    path: ./ruleset/telegram_domain.yaml
-    behavior: domain
-    interval: 86400
-    format: yaml
-    type: http
-  google_domain:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.yaml
-    path: ./ruleset/google_domain.yaml
-    behavior: domain
-    interval: 86400
-    format: yaml
-    type: http
-  geolocation-!cn:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml
-    path: ./ruleset/geolocation-!cn.yaml
-    behavior: domain
-    interval: 86400
-    format: yaml
-    type: http
-  cn_ip:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml
-    path: ./ruleset/cn_ip.yaml
-    behavior: ipcidr
-    interval: 86400
-    format: yaml
-    type: http
-  telegram_ip:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml
-    path: ./ruleset/telegram_ip.yaml
-    behavior: ipcidr
-    interval: 86400
-    format: yaml
-    type: http
-  google_ip:
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml
-    path: ./ruleset/google_ip.yaml
-    behavior: ipcidr
-    interval: 86400
-    format: yaml
-    type: http
-  bing:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
-    path: ./ruleset/bing.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  copilot:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
-    path: ./ruleset/copilot.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  claude:
-    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/claude.yaml
-    path: ./ruleset/claude.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  bard:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BardAI/BardAI.yaml
-    path: ./ruleset/bard.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  openai:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-    path: ./ruleset/openai.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
-  steam:
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
-    path: ./ruleset/steam.yaml
-    behavior: classical
-    interval: 86400
-    format: yaml
-    type: http
+mode: rule
+ipv6: false
+allow-lan: false
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: always
+log-level: warning
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+        - 443
+        - 8443
+    QUIC:
+      ports:
+        - 443
+        - 8443
+  skip-domain:
+    - Mijia Cloud
+    - +.push.apple.com
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  respect-rules: true
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 1.1.1.1
+  proxy-server-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver:
+    - https://1.1.1.1/dns-query#PROXY
+    - https://8.8.8.8/dns-query#PROXY
+  fallback:
+    - https://9.9.9.9/dns-query#PROXY
+    - https://1.0.0.1/dns-query#PROXY
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+  fake-ip-filter:
+    - +.lan
+    - +.local
+    - +.localhost
+    - +.miwifi.com
+    - +.routerlogin.com
+    - +.push.apple.com
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time-ios.apple.com
+    - "*.ntp.org.cn"
+    - "*.pool.ntp.org"
 
 proxy-groups:
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: PROXY
+  - name: PROXY
     type: select
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
     proxies:
       - AUTO
       - HK AUTO
       - TW AUTO
-      - TW SELECT
       - SG AUTO
       - JP AUTO
       - US AUTO
-      - US SELECT
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    name: AUTO
+      - DIRECT
+
+  - name: AUTO
     type: url-test
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
     interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-    name: AIGC
+    tolerance: 50
+
+  - name: AIGC
     type: select
     proxies:
       - PROXY
-      - TW AUTO
-      - TW SELECT
+      - US AUTO
       - SG AUTO
       - JP AUTO
-      - US AUTO
-      - US SELECT
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-    name: Telegram
-    type: select
-    proxies:
-      - PROXY
       - TW AUTO
-      - TW SELECT
       - HK AUTO
-      - SG AUTO
-      - JP AUTO
-      - US AUTO
-      - US SELECT
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
-    name: Google
+
+  - name: SOCIAL
     type: select
     proxies:
       - PROXY
-      - TW AUTO
-      - TW SELECT
       - HK AUTO
+      - TW AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-      - US SELECT
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)香港|Hong Kong|HK|🇭🇰
-    name: HK AUTO
-    type: url-test
-    interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)新加坡|Singapore|SG|🇸🇬
-    name: SG AUTO
-    type: url-test
-    interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)日本|Japan|JP|🇯🇵
-    name: JP AUTO
-    type: url-test
-    interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)美国|USA|US|🇺🇸
-    name: US AUTO
-    type: url-test
-    interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)台湾|TW|🇨🇳
-    name: TW AUTO
-    type: url-test
-    interval: 300
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/China.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)台湾|TW|🇨🇳
-    name: TW SELECT
+
+  - name: MEDIA
     type: select
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
-    include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
-    filter: (?i)美国|USA|US|🇺🇸
-    name: US SELECT
+    proxies:
+      - PROXY
+      - HK AUTO
+      - TW AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+
+  - name: GOOGLE
     type: select
-  - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+    proxies:
+      - PROXY
+      - HK AUTO
+      - TW AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+
+  - name: MICROSOFT
+    type: select
+    proxies:
+      - PROXY
+      - DIRECT
+      - HK AUTO
+      - TW AUTO
+      - SG AUTO
+      - JP AUTO
+      - US AUTO
+
+  - name: HK AUTO
+    type: url-test
     include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    filter: (?i)香港|Hong Kong|HK|HKG
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: TW AUTO
+    type: url-test
+    include-all: true
+    filter: (?i)台湾|Taiwan|TW|TPE|TSA|KHH
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: SG AUTO
+    type: url-test
+    include-all: true
+    filter: (?i)新加坡|Singapore|SG|SIN
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: JP AUTO
+    type: url-test
+    include-all: true
+    filter: (?i)日本|Japan|JP|NRT|HND|KIX
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: US AUTO
+    type: url-test
+    include-all: true
+    filter: (?i)美国|United States|USA|US|SJC|LAX|SFO|SEA|JFK
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|官网|客服|网站|网址|获取|过期|剩余
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+
+  - name: GLOBAL
+    type: select
+    include-all: true
     proxies:
       - PROXY
       - AUTO
       - AIGC
-      - Telegram
-      - Google
-      - TW AUTO
-      - TW SELECT
+      - SOCIAL
+      - MEDIA
+      - GOOGLE
+      - MICROSOFT
       - HK AUTO
+      - TW AUTO
       - SG AUTO
       - JP AUTO
       - US AUTO
-      - US SELECT
-    name: GLOBAL
-    type: select
+      - DIRECT
 
 rules:
+  - RULE-SET,Advertising,REJECT
+  - RULE-SET,Tracking,REJECT
+  - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((GEOIP,CN)))),REJECT
   - RULE-SET,personal_direct,DIRECT
-  - RULE-SET,private,DIRECT
+  - RULE-SET,Private,DIRECT
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,AppleCN,DIRECT
+  - RULE-SET,China,DIRECT
   - RULE-SET,personal_proxy,PROXY
-  - RULE-SET,bing,AIGC
-  - RULE-SET,copilot,AIGC
-  - RULE-SET,bard,AIGC
-  - RULE-SET,openai,AIGC
-  - RULE-SET,claude,AIGC
-  - RULE-SET,steam,PROXY
-  - RULE-SET,telegram_domain,Telegram
-  - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,google_domain,Google
-  - RULE-SET,google_ip,Google
-  - RULE-SET,geolocation-!cn,PROXY
-  - RULE-SET,cn_domain,DIRECT
-  - RULE-SET,cn_ip,DIRECT
+  - RULE-SET,personal_claude,AIGC
+  - RULE-SET,AI,AIGC
+  - RULE-SET,Claude,AIGC
+  - RULE-SET,OpenAI,AIGC
+  - RULE-SET,Gemini,AIGC
+  - RULE-SET,Telegram,SOCIAL
+  - RULE-SET,Twitter,SOCIAL
+  - RULE-SET,Instagram,SOCIAL
+  - RULE-SET,Facebook,SOCIAL
+  - RULE-SET,SocialMedia,SOCIAL
+  - RULE-SET,YouTube,MEDIA
+  - RULE-SET,Netflix,MEDIA
+  - RULE-SET,Disney,MEDIA
+  - RULE-SET,HBO,MEDIA
+  - RULE-SET,Spotify,MEDIA
+  - RULE-SET,Emby,MEDIA
+  - RULE-SET,Streaming,MEDIA
+  - RULE-SET,Google,GOOGLE
+  - RULE-SET,Microsoft,MICROSOFT
+  - RULE-SET,OneDrive,MICROSOFT
+  - RULE-SET,GitHub,PROXY
+  - RULE-SET,Cloudflare,PROXY
+  - RULE-SET,Proxy,PROXY
+  - RULE-SET,AdvertisingIP,REJECT,no-resolve
+  - RULE-SET,PrivateIP,DIRECT,no-resolve
+  - RULE-SET,AIIP,AIGC,no-resolve
+  - RULE-SET,TelegramIP,SOCIAL,no-resolve
+  - RULE-SET,SocialMediaIP,SOCIAL,no-resolve
+  - RULE-SET,FacebookIP,SOCIAL,no-resolve
+  - RULE-SET,StreamingIP,MEDIA,no-resolve
+  - RULE-SET,NetflixIP,MEDIA,no-resolve
+  - RULE-SET,EmbyIP,MEDIA,no-resolve
+  - RULE-SET,GoogleIP,GOOGLE,no-resolve
+  - RULE-SET,CloudflareIP,PROXY,no-resolve
+  - RULE-SET,ProxyIP,PROXY,no-resolve
+  - RULE-SET,ChinaIP,DIRECT,no-resolve
   - MATCH,PROXY
+
+rule-providers:
+  personal_direct:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/personal_direct.yaml
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/direct.yaml
+  personal_proxy:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/personal_proxy.yaml
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/proxy.yaml
+  personal_claude:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/personal_claude.yaml
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/clash/claude.yaml
+  Advertising:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Advertising.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Advertising.txt
+  Tracking:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Tracking.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Tracking.txt
+  Private:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Private.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Private.txt
+  Direct:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Direct.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Direct.txt
+  Download:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Download.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Download.txt
+  AppleCN:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/AppleCN.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/AppleCN.txt
+  China:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/China.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/China.txt
+  AI:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/AI.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/AI.txt
+  Claude:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Claude.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Claude.txt
+  OpenAI:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/OpenAI.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/OpenAI.txt
+  Gemini:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Gemini.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Gemini.txt
+  Telegram:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Telegram.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Telegram.txt
+  Twitter:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Twitter.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Twitter.txt
+  Instagram:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Instagram.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Instagram.txt
+  Facebook:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Facebook.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Facebook.txt
+  SocialMedia:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/SocialMedia.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/SocialMedia.txt
+  YouTube:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/YouTube.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/YouTube.txt
+  Netflix:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Netflix.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Netflix.txt
+  Disney:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Disney.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Disney.txt
+  HBO:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/HBO.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/HBO.txt
+  Spotify:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Spotify.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Spotify.txt
+  Emby:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Emby.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Emby.txt
+  Streaming:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Streaming.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Streaming.txt
+  Google:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Google.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Google.txt
+  Microsoft:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Microsoft.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Microsoft.txt
+  OneDrive:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/OneDrive.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/OneDrive.txt
+  GitHub:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/GitHub.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/GitHub.txt
+  Cloudflare:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Cloudflare.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Cloudflare.txt
+  Proxy:
+    type: http
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/domain/Proxy.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/domain/Proxy.txt
+  AdvertisingIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Advertising.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Advertising.txt
+  PrivateIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Private.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Private.txt
+  AIIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/AI.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/AI.txt
+  TelegramIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Telegram.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Telegram.txt
+  SocialMediaIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/SocialMedia.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/SocialMedia.txt
+  FacebookIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Facebook.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Facebook.txt
+  StreamingIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Streaming.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Streaming.txt
+  NetflixIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Netflix.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Netflix.txt
+  EmbyIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Emby.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Emby.txt
+  GoogleIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Google.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Google.txt
+  CloudflareIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Cloudflare.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Cloudflare.txt
+  ProxyIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/Proxy.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/Proxy.txt
+  ChinaIP:
+    type: http
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ip/China.txt
+    url: https://raw.githubusercontent.com/EmccK/PersonalRules/refs/heads/main/mihomo/ip/China.txt

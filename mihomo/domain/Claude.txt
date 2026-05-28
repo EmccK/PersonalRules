@@ -1,0 +1,9 @@
+# SOURCE: upstream synced by scripts/sync-rules.mjs
+# URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Claude.txt
+# NAME: Claude
+# AUTHOR: YYDS666
+# UPDATED: 2026-05-28 03:58:35
+# TOTAL: 3
++.anthropic.com
++.claude.ai
+cdn.usefathom.com

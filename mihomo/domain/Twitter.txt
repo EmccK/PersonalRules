@@ -1,0 +1,30 @@
+# SOURCE: upstream synced by scripts/sync-rules.mjs
+# URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Twitter.txt
+# NAME: Twitter
+# AUTHOR: YYDS666
+# UPDATED: 2026-05-28 03:58:35
+# TOTAL: 24
++.ads-twitter.com
++.cms-twdigitalassets.com
++.periscope.tv
++.pscp.tv
++.t.co
++.tellapart.com
++.tweetdeck.com
++.twimg.com
++.twitpic.com
++.twitter.biz
++.twitter.com
++.twitter.jp
++.twitter.map.fastly.net
++.twittercommunity.com
++.twitterflightschool.com
++.twitterinc.com
++.twitteroauth.com
++.twitterstat.us
++.twtrdns.net
++.twttr.com
++.twttr.net
++.twvid.com
++.vine.co
++.x.com

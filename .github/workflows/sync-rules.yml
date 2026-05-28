@@ -1,0 +1,39 @@
+name: 同步规则
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 同步规则
+        run: npm run sync
+
+      - name: 校验文件
+        run: npm run validate
+
+      - name: 提交变更
+        run: |
+          if git diff --quiet -- mihomo/domain mihomo/ip; then
+            echo "规则无变化"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mihomo/domain mihomo/ip
+          git commit -m "同步规则"
+          git push
