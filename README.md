@@ -43,6 +43,7 @@ npm run validate
 - `dns.respect-rules: true`
 - 境外 DoH 显式使用 `#一键连`
 - `direct-nameserver` 仅用于直连流量
+- GeoIP 保持 MMDB 模式，并使用 CDN 下载地址
 - 海外 UDP/443 QUIC 默认拦截，减少规则绕过
 
 规则文件同步到当前仓库后，运行时 `rule-providers` 只引用本仓库 raw 地址。外部上游只在 `npm run sync` 时使用；如果同步失败且本地已有规则，脚本会保留现有文件。
