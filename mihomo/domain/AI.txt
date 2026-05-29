@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-05-28 03:56:28
+# UPDATED: 2026-05-30 04:04:48
 # TOTAL: 244
 +.agentclientprotocol.com
 +.ai.com
