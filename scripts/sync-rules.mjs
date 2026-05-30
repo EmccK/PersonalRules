@@ -1,7 +1,38 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname } from 'node:path'
 
-const upstreamBaseUrl = process.env.RULES_UPSTREAM_BASE_URL || 'https://raw.githubusercontent.com/666OS/rules/release/mihomo'
+const upstreamBaseUrl = validateUpstreamUrl(
+  process.env.RULES_UPSTREAM_BASE_URL || 'https://raw.githubusercontent.com/666OS/rules/release/mihomo',
+)
+
+// 校验上游 URL，仅允许 HTTPS 且禁止内网地址
+function validateUpstreamUrl(raw) {
+  let parsed
+  try {
+    parsed = new URL(raw)
+  } catch {
+    console.error(`上游 URL 无效：${raw}`)
+    process.exit(1)
+  }
+
+  if (parsed.protocol !== 'https:') {
+    console.error(`上游 URL 必须使用 HTTPS：${raw}`)
+    process.exit(1)
+  }
+
+  const host = parsed.hostname
+  if (
+    host === 'localhost' ||
+    host.endsWith('.local') ||
+    /^(127\.|10\.|172\.(1[6-9]|2\d|3[01])\.|192\.168\.|169\.254\.)/.test(host) ||
+    host === '0.0.0.0'
+  ) {
+    console.error(`上游 URL 禁止指向内网地址：${raw}`)
+    process.exit(1)
+  }
+
+  return parsed.href.replace(/\/$/, '')
+}
 
 const domainRules = [
   'Private',
@@ -72,10 +103,16 @@ async function fetchText(url) {
     headers: {
       'user-agent': 'PersonalRules sync-rules',
     },
+    redirect: 'error',
   })
 
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`)
+  }
+
+  const contentType = response.headers.get('content-type') || ''
+  if (contentType && !contentType.startsWith('text/') && !contentType.includes('charset')) {
+    throw new Error(`响应类型不是文本：${contentType}`)
   }
 
   return response.text()
