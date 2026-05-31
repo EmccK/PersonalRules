@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/XPTV.txt
 # NAME: XPTV
 # AUTHOR: YYDS666
-# UPDATED: 2026-05-30 04:06:53
+# UPDATED: 2026-06-01 02:59:42
 # TOTAL: 333
 +.115.com
 +.189.cn
