@@ -10,11 +10,11 @@ payload:
   - DOMAIN-SUFFIX,doh.pub
   - DOMAIN-SUFFIX,m-team.cc
   - DOMAIN-SUFFIX,m-team.io
-  - DOMAIN-SUFFIX,sharedchat.fun
 
   # 域名关键字
   - DOMAIN-KEYWORD,baidu
   - DOMAIN-KEYWORD,bybit
+  - DOMAIN-KEYWORD,sharedchat
 
   # 国内 DNS
   - IP-CIDR,219.146.1.66/32,no-resolve
