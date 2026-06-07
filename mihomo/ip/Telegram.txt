@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/ip/Telegram.txt
 # NAME: Telegram
 # AUTHOR: YYDS666
-# UPDATED: 2026-05-28 03:56:29
+# UPDATED: 2026-06-06 03:27:56
 # TOTAL: 31
 109.239.140.0/24
 139.59.210.98/32

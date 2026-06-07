@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-05-28 03:58:34
-# TOTAL: 4428
+# UPDATED: 2026-06-06 03:30:03
+# TOTAL: 4434
 +.000webhost.com
 +.1-apple.com.tw
 +.1000giri.net
@@ -257,6 +257,7 @@
 +.arvanstorage.ir
 +.arweave.org
 +.arxiv.org
++.as.mr
 +.asacp.org
 +.asiaharvest.org
 +.asianage.com
@@ -320,6 +321,7 @@
 +.bangdream.space
 +.bangkokpost.com
 +.bangumi.moe
++.bangumi.tv
 +.bangyoulater.com
 +.bankmobilevibe.com
 +.bannedbook.org
@@ -373,6 +375,7 @@
 +.betvictor.com
 +.bfnn.org
 +.bfsh.hk
++.bgm.tv
 +.bgme.me
 +.bgvpn.com
 +.biblesforamerica.org
@@ -632,6 +635,7 @@
 +.chenshan20042005.wordpress.com
 +.cherrysave.com
 +.chhongbi.org
++.chii.in
 +.china-mmm.net
 +.china-week.com
 +.china101.com
@@ -726,7 +730,6 @@
 +.cn.uptodown.com
 +.cna.com.tw
 +.cnbbnews.wordpress.com
-+.cnbc.com
 +.cnbeta.com.tw
 +.cnd.org
 +.cnnews.chosun.com
@@ -1289,6 +1292,7 @@
 +.gekikame.com
 +.gemini.com
 +.gemini.google.com
++.gencraft.com
 +.generated.photos
 +.genius.com
 +.geph.io
@@ -1701,6 +1705,7 @@
 +.hicairo.com
 +.hiccears.com
 +.hidden-advent.org
++.hiddify.com
 +.hide.me
 +.hideipvpn.com
 +.hideman.net
@@ -3106,7 +3111,6 @@
 +.socialblade.com
 +.socks-proxy.net
 +.sockslist.net
-+.softether-download.com
 +.softether.co.jp
 +.softether.org
 +.softfamous.com
@@ -3235,6 +3239,7 @@
 +.surfeasy.com
 +.surfshark.com
 +.surrenderat20.net
++.suyingtv.com
 +.swagbucks.com
 +.swapspace.co
 +.swissinfo.ch
@@ -3658,6 +3663,7 @@
 +.vatn.org
 +.vcf-online.org
 +.vcfbuilder.org
++.veed.io
 +.vegas.williamhill.com
 +.vegasred.com
 +.venetianmacao.com
@@ -3888,6 +3894,7 @@
 +.wowhead.com
 +.wowporn.com
 +.wp.com
++.wplace.live
 +.wpoforum.com
 +.writesonic.com
 +.wsj.com
@@ -4002,7 +4009,6 @@
 +.yfsp.tv
 +.yhcw.net
 +.yibaochina.com
-+.yidio.com
 +.yigeni.com
 +.yimg.com
 +.yingwangtech.cloud

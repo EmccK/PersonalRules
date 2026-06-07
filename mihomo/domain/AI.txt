@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-05-28 03:56:28
-# TOTAL: 244
+# UPDATED: 2026-06-06 03:30:02
+# TOTAL: 246
 +.agentclientprotocol.com
 +.ai.com
 +.ai.studio
@@ -22,6 +22,7 @@
 +.apis.google.com
 +.app-analytics-services.com
 +.apps.mzstatic.com
++.arena.ai
 +.auth0.com
 +.bard.google.com
 +.cerebras.ai
@@ -82,6 +83,7 @@
 +.geller-pa.googleapis.com
 +.gemini.google
 +.gemini.google.com
++.gemini.gstatic.com
 +.generativeai.google
 +.generativelanguage.googleapis.com
 +.githubcopilot.com
