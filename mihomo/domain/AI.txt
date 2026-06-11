@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-06-10 03:55:55
-# TOTAL: 247
+# UPDATED: 2026-06-12 04:09:48
+# TOTAL: 250
 +.agentclientprotocol.com
 +.ai.com
 +.ai.studio
@@ -133,6 +133,7 @@
 +.notebooklm.google.com
 +.oaifree.com
 +.oaistatic.com
++.oaistatsig.com
 +.oaiusercontent.com
 +.observeit.net
 +.ollama.com
@@ -156,12 +157,14 @@
 +.poecdn.net
 +.pplx.ai
 +.proactivebackend-pa.googleapis.com
++.qoder.com
 +.replicate.com
 +.replika.com
 +.robinfrontend-pa.googleapis.com
 +.runwayml.com
 +.segment.io
 +.sentry.io
++.sider.ai
 +.smoot.apple.com
 +.sora.com
 +.sourcegraph.com
