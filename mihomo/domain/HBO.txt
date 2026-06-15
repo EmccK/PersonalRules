@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/HBO.txt
 # NAME: HBO
 # AUTHOR: YYDS666
-# UPDATED: 2026-06-14 03:06:39
+# UPDATED: 2026-06-16 04:44:22
 # TOTAL: 64
 +.beforeigners.com
 +.brightline.tv
