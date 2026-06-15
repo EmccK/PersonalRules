@@ -23,6 +23,9 @@ payload:
   # LinuxDo
   - DOMAIN-SUFFIX,linux.do
 
+  # MuMu 模拟器
+  - DOMAIN-SUFFIX,mumuplayer.com
+
   # 域名关键字
   - DOMAIN-KEYWORD,openai
 
