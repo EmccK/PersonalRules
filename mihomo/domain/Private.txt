@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Private.txt
 # NAME: Private
 # AUTHOR: YYDS666
-# UPDATED: 2026-06-22 03:13:05
+# UPDATED: 2026-06-24 03:46:55
 # TOTAL: 229
 +.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.0.in-addr.arpa

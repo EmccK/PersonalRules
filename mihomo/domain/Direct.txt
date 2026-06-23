@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Direct.txt
 # NAME: Direct
 # AUTHOR: YYDS666
-# UPDATED: 2026-06-22 03:13:03
+# UPDATED: 2026-06-24 03:47:05
 # TOTAL: 33
 +.checkip.dyndns.org
 +.checkip.synology.com
