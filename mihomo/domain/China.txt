@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/China.txt
 # NAME: China
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-02 03:28:45
-# TOTAL: 112073
+# UPDATED: 2026-07-04 03:00:18
+# TOTAL: 112082
 +.0.zone
 +.00.net
 +.000.link
@@ -7708,6 +7708,7 @@
 +.777haoka.com
 +.777lala.com
 +.777moban.com
++.777ppt.com
 +.777sy.com
 +.777yh.am
 +.7788.com
@@ -10187,6 +10188,7 @@
 +.admin345.com
 +.admin5.net
 +.admin88.com
++.admincdn.com
 +.admintony.com
 +.adminxe.com
 +.adminxy.com
@@ -14811,6 +14813,7 @@
 +.beidousafety.org
 +.beidouxingxueche.com
 +.beiduolab.com
++.beie.org
 +.beierbio.com
 +.beierjin.net
 +.beieryouxi.com
@@ -40024,6 +40027,7 @@
 +.guojiayikao.com
 +.guojiayixuekaoshi.com
 +.guojiazhiyezige.com
++.guojibk.com
 +.guojiexpress.com
 +.guojijinjia.com
 +.guojimami.com
@@ -77843,6 +77847,7 @@
 +.rrjc.com
 +.rrkf.com
 +.rrky.com
++.rrmj.plus
 +.rrmj.tv
 +.rrppt.com
 +.rrrdai.com
@@ -89712,6 +89717,7 @@
 +.tokenglish.com
 +.tokensky.net
 +.tokimekiclub.org
++.tol.vip
 +.tol24.com
 +.tom.cat
 +.tom.com
@@ -93423,6 +93429,7 @@
 +.vpsrb.com
 +.vpsss.net
 +.vpssw.com
++.vpsvs.com
 +.vpsvsvps.com
 +.vpszh.com
 +.vptek.com
@@ -95092,6 +95099,7 @@
 +.wenmi114.com
 +.wenmingban.com
 +.wenneart.com
++.wenpai.org
 +.wenpie.com
 +.wenqy.com
 +.wenroo.com
@@ -96712,6 +96720,7 @@
 +.wpceo.com
 +.wpcio.com
 +.wpcsh.com
++.wpcy.com
 +.wpdaxue.com
 +.wpdian.com
 +.wpengapp.com
