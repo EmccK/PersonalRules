@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AppleCN.txt
 # NAME: AppleCN
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-06 02:57:27
+# UPDATED: 2026-07-08 03:32:32
 # TOTAL: 39
 +.apple-cloudkit.com
 +.apple-dns.cn
