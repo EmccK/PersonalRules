@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/ip/Private.txt
 # NAME: Private
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-08 03:32:32
+# UPDATED: 2026-07-10 03:18:02
 # TOTAL: 29
 0.0.0.0/8
 10.0.0.0/8
