@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-16 02:52:10
+# UPDATED: 2026-07-18 02:50:01
 # TOTAL: 27106
 +.000webhost.com
 +.01.org
