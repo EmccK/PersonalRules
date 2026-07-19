@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-18 02:50:01
-# TOTAL: 27106
+# UPDATED: 2026-07-20 02:45:17
+# TOTAL: 27157
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -1291,7 +1291,6 @@
 +.alexa.com
 +.alexanderstreet.com
 +.alfa.me
-+.alfabank.oavdo.amc
 +.alfabank.ru
 +.alfabank.st
 +.alfadirect.ru
@@ -2802,6 +2801,7 @@
 +.azuredns-prd.org
 +.azureedge-test.net
 +.azureedge.net
++.azureedge.us
 +.azurefd.net
 +.azureiotcentral.com
 +.azureiotsolutions.com
@@ -3387,6 +3387,9 @@
 +.bestbuytradein.com
 +.bestbuyus.com
 +.bestcamsites.net
++.bestchange.com
++.bestchange.net
++.bestchange.ru
 +.bestclouddrive.com
 +.bestdori.com
 +.besterpornos.com
@@ -4277,6 +4280,7 @@
 +.bnn.co
 +.bnrmetal.com
 +.bntrace.com
++.bnxz.net
 +.boardreader.com
 +.boboporn.com
 +.boboporn.net
@@ -4720,6 +4724,7 @@
 +.bypasscensorship.org
 +.byrut.org
 +.byspotify.com
++.bystys.tech
 +.bytedapm.com
 +.byteoversea.com
 +.bytick.com
@@ -5182,6 +5187,7 @@
 +.chatango.com
 +.chatgpt.com
 +.chatgpt.livekit.cloud
++.chatgpt.site
 +.chatgptvideo.xyz
 +.chatgptvideob.buzz
 +.chatpdf.com
@@ -5818,6 +5824,7 @@
 +.coova.com
 +.coova.net
 +.coova.org
++.copilot-stg.com
 +.copilot.com
 +.copilot.microsoft.com
 +.copro.pw
@@ -5930,6 +5937,7 @@
 +.crixet.com
 +.crmdynint-gcc.com
 +.crmdynint.com
++.crocoblock.com
 +.crocotube.com
 +.cromite.org
 +.crossborderexpansion.com
@@ -6290,6 +6298,7 @@
 +.delcamtv.com
 +.delcamuniversity.com
 +.delcamusa.com
++.delets.online
 +.delicious.com.au
 +.dell
 +.dell.ac
@@ -9700,6 +9709,7 @@
 +.getporn.tv
 +.getprintersupports.com
 +.getscorecash.com
++.getsentry.com
 +.getsession.org
 +.getsexgames.com
 +.getsynapse.io
@@ -10026,7 +10036,6 @@
 +.gonike.com
 +.gonzo-movies.com
 +.gonzo.com
-+.goo
 +.goo.gl
 +.goo.ne.jp
 +.gooblox.com
@@ -10569,6 +10578,8 @@
 +.hao62.xyz
 +.haori888.com
 +.haplorrhini.com
++.happ.info
++.happ.su
 +.happymeal.co.nz
 +.happymeal.com
 +.happymeal.com.au
@@ -12237,7 +12248,6 @@
 +.intagrm.com
 +.intc.com
 +.integral7.com
-+.intel
 +.intel-research.net
 +.intel-university-collaboration.net
 +.intel.ac
@@ -13415,6 +13425,7 @@
 +.khotruyentranhx.com
 +.kichiku-doujinko.com
 +.kichikuou.com
++.kick.com
 +.kickporn.com
 +.kickshatchannel.com
 +.kicksnike1.com
@@ -13539,7 +13550,6 @@
 +.konachan.com
 +.konachan.net
 +.konachan.wjcodes.com
-+.konami
 +.konami-igaming.online
 +.konami.co.jp
 +.konami.com
@@ -13837,7 +13847,14 @@
 +.lih.kg
 +.lihkg.com
 +.lihksnap.com
++.like-video.com
 +.like.com
++.like.video
++.likee.com
++.likee.video
++.likeeapp.ru
++.likeevideo.com
++.likeevideo.ru
 +.likeseiyu.com
 +.liketruyen.net
 +.liketwice.com
@@ -14786,6 +14803,7 @@
 +.mh4u.org
 +.mhcb.ru
 +.mhcbr.ru
++.mhgui.com
 +.mhhanman.xyz
 +.mhqwe.xyz
 +.mhradio.org
@@ -15546,6 +15564,7 @@
 +.motiongraphicsandmore.com
 +.motionpictureser.com
 +.moto.com
++.motocms.com
 +.motolia.com
 +.motopress.com
 +.motorola.ca
@@ -16187,6 +16206,7 @@
 +.nettyinternet.com
 +.netvideogirls.com
 +.netvigator.com
++.netxh.blog
 +.netzerobuildings.com
 +.netzerobuildingstudio.com
 +.neuerporno.com
@@ -17119,6 +17139,7 @@
 +.onekey.so
 +.onekeycn.com
 +.oneme.ru
++.onemoment.cc
 +.onemozilla.org
 +.onenote.com
 +.onenote.net
@@ -17345,6 +17366,7 @@
 +.ovpn.com
 +.ow.ly
 +.owltail.com
++.owxd.xyz
 +.oxfordaasc.com
 +.oxfordartonline.com
 +.oxfordbibliographies.com
@@ -17512,6 +17534,7 @@
 +.paxlicense.org
 +.paydiant.com
 +.payecom.ru
++.payget.pro
 +.paygonline.com
 +.payhulu.com
 +.paylike.com
@@ -18012,6 +18035,7 @@
 +.plastics-cadcam.com
 +.platiecom.ru
 +.platinumlinks.org
++.platov.co
 +.play-asia.com
 +.play-bmm.shop
 +.play-bmmer.buzz
@@ -18843,6 +18867,7 @@
 +.qmov.net
 +.qmttqg3k.me
 +.qnap.com
++.qnapsupport.net
 +.qobuz.com
 +.qoder.com
 +.qombol.com
@@ -19004,6 +19029,8 @@
 +.rakutengiftcards.ca
 +.rakuya.com.tw
 +.ramcity.com.au
++.ramon.cash
++.ramon.money
 +.randyblue.com
 +.rapefilms.net
 +.rapetube.me
@@ -19956,6 +19983,7 @@
 +.sensualmothers.com
 +.sensueel.net
 +.sentry-cdn.com
++.sentry.dev
 +.sentry.io
 +.senzuritv.net
 +.seo-dash.net
@@ -21103,6 +21131,7 @@
 +.starfox.com
 +.stargazer-games.com
 +.stark-verlag.ch
++.starlink.com
 +.starott.com
 +.starp2p.com
 +.starplus.com
@@ -21711,6 +21740,7 @@
 +.tellmewhygame.com
 +.temetube.xyz
 +.temp-mail.org
++.templatemonster.com
 +.temu.com
 +.tenbin.ai
 +.tenbyfotolia.com
@@ -22953,6 +22983,7 @@
 +.uweb.ru
 +.uwpcommunitytoolkit.com
 +.uxthemes.com
++.uxzw.club
 +.uyghur-j.org
 +.uyghuraa.org
 +.uyghuramerican.org
@@ -24051,6 +24082,7 @@
 +.wbautomation.ru
 +.wbautomation.tech
 +.wbbasket.ru
++.wbcontent.net
 +.wbd.ms
 +.wbdnbo.net
 +.wbdubna.ru
@@ -25806,6 +25838,7 @@
 +.ytimg.com
 +.ytn.co.kr
 +.yuanming.net
++.yucf.top
 +.yuenuge113.xyz
 +.yuenuge18.cc
 +.yugioh-card.com
@@ -26100,6 +26133,7 @@ adpl.org.hk
 adult.friendfinder.com
 afa7f374f51cc8991.awsglobalaccelerator.com
 afantibbs.com
+agb9r0ad.qllfkl.com
 ai.google.dev
 akademiye.org
 alanhou.com
@@ -26244,40 +26278,56 @@ crocotube.com
 csis-prod.s3.amazonaws.com
 d-fukyu.com
 d19eijqb5qll1w.cloudfront.net
+d1d0w7op819ely.cloudfront.net
 d1e00ek4ebabms.cloudfront.net
+d1fijc56o1fzod.cloudfront.net
 d1g1f25tn8m2e6.cloudfront.net
 d1k2us671qcoau.cloudfront.net
 d1m7jfoe9zdc1j.cloudfront.net
 d1mhjrowxxagfy.cloudfront.net
 d1ndex63qxojbr.cloudfront.net
+d1nu566dreq9vj.cloudfront.net
 d1oca24q5dwo6d.cloudfront.net
+d1ugi9qonif2a2.cloudfront.net
 d1unuk07s6td74.cloudfront.net
 d1v5ir2lpwr8os.cloudfront.net
 d1w2poirtb3as9.cloudfront.net
 d1xhnb4ptk05mw.cloudfront.net
 d1ymi26ma8va5x.cloudfront.net
+d20g4xwarzxagx.cloudfront.net
 d22qjgkvxw22r6.cloudfront.net
 d25xi40x97liuc.cloudfront.net
+d26rnz3bwp7rlk.cloudfront.net
 d27xxe7juh1us6.cloudfront.net
+d28odxiw1asdj8.cloudfront.net
 d29vzk4ow07wi7.cloudfront.net
 d2aba1wr3818hz.cloudfront.net
 d2anahhhmp1ffz.cloudfront.net
 d2bay.com
+d2be40xdoc0in8.cloudfront.net
 d2dylwb3shzel1.cloudfront.net
 d2e2de1etea730.cloudfront.net
+d2fg91fzjsrcv1.cloudfront.net
+d2j7e8uopcv07.cloudfront.net
 d2nvs31859zcd8.cloudfront.net
 d2um2qdswy1tb0.cloudfront.net
+d2v9yioq9zuuq2.cloudfront.net
 d2vjef5jvl6bfs.cloudfront.net
 d2xmjdvx03ij56.cloudfront.net
+d31dormfno8pk4.cloudfront.net
 d33wubrfki0l68.cloudfront.net
 d36nr0u3xmc4mm.cloudfront.net
 d3aqoihi2n8ty8.cloudfront.net
 d3c27h4odz752x.cloudfront.net
 d3c33hcgiwev3.cloudfront.net
+d3lh5kkip965lj.cloudfront.net
+d3nwj80emtnjeo.cloudfront.net
 d3r7nsslvs6aaf.cloudfront.net
+d3ucl0eqgl80l5.cloudfront.net
 d3vd9lfkzbru3h.cloudfront.net
 d6d4ismr40iw.cloudfront.net
 d6tizftlrpuof.cloudfront.net
+d96jfp62lg3kj.cloudfront.net
 daidostup.ru
 daily-cloudcode-pa.googleapis.com
 dalailama.mn
@@ -26286,7 +26336,9 @@ databank.worldbank.org
 database.asahi.com
 datarouter.apps.netherrealm.com
 david-kilgour.com
+dcb0z5ovq92mz.cloudfront.net
 ddacn6pr5v0tl.cloudfront.net
+ddpjwstwtpszg.cloudfront.net
 deck.ly
 default.exp-tas.com
 dell.my.site.com
@@ -26312,6 +26364,7 @@ ds-vod-abematv.akamaized.net
 ds0h3roq6wcgc.cloudfront.net
 dscn.info
 dstk.dk
+dstnzhnatv9pz.cloudfront.net
 dtlgalleryint.cloudapp.net
 duga.jp
 dw-world.de
@@ -26414,6 +26467,7 @@ h-moe.com
 hamivideo.hinet.net
 hammerandchisel.ssl.zendesk.com
 hb.imgix.net
+hb4bbbbb.pmhcjk.com
 hdzog.com
 heads-ak-spotify-com.akamaized.net
 heads4-ak-spotify-com.akamaized.net
@@ -26518,6 +26572,7 @@ mwf-service.akamaized.net
 na1r.services.adobe.com
 nab.demdex.net
 nationalaustraliaban.tt.omtrdc.net
+nbbb1bb7.pmhcjk.com
 nbtvpn.com
 netflix.com.edgesuite.net
 new.c.mi.com
@@ -26603,11 +26658,7 @@ pornsharing.com
 poshtestgallery.cloudapp.net
 ppl-ai-file-upload.s3.amazonaws.com
 pplx-res.cloudinary.com
-practivate.adobe
 practivate.adobe.com
-practivate.adobe.ipp
-practivate.adobe.newoa
-practivate.adobe.ntp
 prd-priconne-redive.akamaized.net
 preprod-publicca.googleapis.com
 prodforza.blob.core.windows.net
@@ -26639,6 +26690,7 @@ public-us-pingsx.api.clonoth.com
 publicca.googleapis.com
 push-apple.com.akadns.net
 pvr-hamivideo.cdn.hinet.net
+q676790b.pmhcjk.com
 qmp4.com
 qualcomm.sc.omtrdc.net
 quran.com
@@ -26817,7 +26869,6 @@ taoism.net
 tarr.uspto.gov
 tbssqh.org
 teamviewer.com.cdn.cloudflare.net
-tesla-cdn.thron.com
 testflight.apple.com
 thedalailamamovie.com
 thegioitinhoc.vn
