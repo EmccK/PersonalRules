@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/YouTube.txt
 # NAME: YouTube
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-20 02:47:25
+# UPDATED: 2026-07-22 03:02:58
 # TOTAL: 178
 +.ads.youtube.com
 +.ggpht.cn

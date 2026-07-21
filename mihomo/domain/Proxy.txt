@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-20 02:45:17
-# TOTAL: 27157
+# UPDATED: 2026-07-22 03:02:56
+# TOTAL: 27160
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -5482,6 +5482,7 @@
 +.clashofclans.com
 +.clashroyale.com
 +.clashroyaleapp.com
++.clashyun.com
 +.clasporno.org
 +.classicalguitarblog.net
 +.classicnike.com
@@ -21503,6 +21504,7 @@
 +.syosetu.com
 +.sysinternals.com
 +.system76.com
++.sysub.com
 +.syzbj36.xyz
 +.szabadeuropa.hu
 +.szcheapmonsterheadphones.com
@@ -25940,6 +25942,7 @@
 +.zenlesszonezero.com
 +.zenmate.com
 +.zenmate.com.ru
++.zenmux.ai
 +.zenodo.org
 +.zeplin.dev
 +.zeplin.io
