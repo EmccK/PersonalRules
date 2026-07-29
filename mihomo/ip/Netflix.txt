@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/ip/Netflix.txt
 # NAME: Netflix
 # AUTHOR: YYDS666
-# UPDATED: 2026-07-28 03:08:07
+# UPDATED: 2026-07-30 02:51:20
 # TOTAL: 108
 108.175.32.0/20
 185.2.220.0/22
