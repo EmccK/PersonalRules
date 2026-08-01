@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Download.txt
 # NAME: Download
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-01 03:05:20
+# UPDATED: 2026-08-02 02:50:12
 # TOTAL: 192
 +.52pt.site
 +.acg.rip
