@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Netflix.txt
 # NAME: Netflix
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-02 02:50:14
+# UPDATED: 2026-08-04 03:17:13
 # TOTAL: 24
 +.fast.com
 +.netflix.ca
