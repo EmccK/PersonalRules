@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-06 03:12:31
-# TOTAL: 27204
+# UPDATED: 2026-08-08 02:36:38
+# TOTAL: 27202
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -2460,7 +2460,6 @@
 +.audiobeatsau.com
 +.audiobeatsbydre.com
 +.audiomonsterbeatsonline.com
-+.auntology.fandom.com
 +.auntymaza.com
 +.auricularemonsterbeats.com
 +.auricularesbeatsbaratosshop.com
@@ -11163,7 +11162,6 @@
 +.honestpornreviews.com
 +.hongjie10.xyz
 +.hongjie11.xyz
-+.hongkong.fandom.com
 +.hongkongdoll.tv
 +.hongkongdollvideo.org
 +.hongkongfp.com
