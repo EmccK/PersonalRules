@@ -83,6 +83,7 @@ dns:
     - rule-set:Private
     - rule-set:China
     # QQ 机器人及腾讯回调、媒体资源使用真实 DNS 解析
+    - +.qq.com
     - +.sgroup.qq.com
     - +.tencent-cloud.net
     - +.myqcloud.com
