@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/China.txt
 # NAME: China
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-10 02:22:54
-# TOTAL: 111337
+# UPDATED: 2026-08-10 07:46:59
+# TOTAL: 111339
 +.0.zone
 +.00.net
 +.000.link
@@ -60669,6 +60669,7 @@
 +.lifevc.com
 +.lifevccdn.com
 +.lifeweeker.com
++.lifexue.com
 +.lifeyk.com
 +.lifeyn.net
 +.lifezb.com
@@ -93995,6 +93996,7 @@
 +.weibangong.com
 +.weibanzhushou.com
 +.weibo.com
++.weibocdn.com
 +.weibu.com
 +.weibusi.net
 +.weicaifu.com
