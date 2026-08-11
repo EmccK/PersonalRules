@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-10 07:44:55
-# TOTAL: 27273
+# UPDATED: 2026-08-12 02:45:01
+# TOTAL: 27274
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -6877,6 +6877,7 @@
 +.disqusservice.com
 +.dit-inc.us
 +.divas.com.uy
++.divdyn.com
 +.diwodiwo.xyz
 +.diyarbakirescort.com
 +.diyin.org
