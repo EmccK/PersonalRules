@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/China.txt
 # NAME: China
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-12 02:44:52
-# TOTAL: 111339
+# UPDATED: 2026-08-14 02:46:47
+# TOTAL: 111342
 +.0.zone
 +.00.net
 +.000.link
@@ -51090,6 +51090,8 @@
 +.iot688.com
 +.iot889.com
 +.iotachem.com
++.iotaskyt.com
++.iotaskyty.com
 +.iotbay.com
 +.iotfair.net
 +.iotku.com
@@ -86981,6 +86983,7 @@
 +.tbbbk.com
 +.tbcache.com
 +.tbcdn.com
++.tbdesk.com
 +.tbh5.com
 +.tbhcc.com
 +.tbhelper.com
