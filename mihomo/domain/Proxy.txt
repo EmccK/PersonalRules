@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-14 02:44:46
-# TOTAL: 27274
+# UPDATED: 2026-08-16 02:11:06
+# TOTAL: 27318
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -733,6 +733,9 @@
 +.activelearnprimary.com.au
 +.activematter.game
 +.activeteachonline.com
++.activision.com
++.activisionblizzard.com
++.activisionblizzardmedia.com
 +.activpn.com
 +.actualidad-rt.com
 +.aculo.us
@@ -3356,6 +3359,7 @@
 +.bellotube.com
 +.bellsouth.net
 +.benaughty.fun
++.benefitsforeveryworld.com
 +.bengalisexvideos.com
 +.benliton.com
 +.bentobox.tv
@@ -4602,6 +4606,7 @@
 +.buicha.social
 +.building3dcontent.com
 +.builtfromebay.com
++.builtwithnix.org
 +.bukkake-jav.com
 +.bullguard.com
 +.bullog.org
@@ -4804,6 +4809,11 @@
 +.callbackkiller.com
 +.callersbane.com
 +.callhulu.com
++.callofduty.com
++.callofdutyendowment.com
++.callofdutyendowment.org
++.callofdutyleague.com
++.callofdutymobile.com
 +.cam-duct.com
 +.cam4.com
 +.cam69.com
@@ -4855,6 +4865,7 @@
 +.camwhoria.com
 +.canada-beatsbydre.com
 +.candidforum-videos.com
++.candycrush.com
 +.candycumcity.com
 +.candypleasure.com
 +.caniuse.com
@@ -5923,6 +5934,7 @@
 +.crackle.com
 +.craigslist.org
 +.crankplayer.com
++.crashbandicoot.com
 +.crashlytics.com
 +.crates.io
 +.crazy-amateurs.com
@@ -6495,6 +6507,7 @@
 +.demo.unlock-music.dev
 +.democracy.earth
 +.demonoid.is
++.demonware.net
 +.demoprint.com
 +.demosisto.hk
 +.denfaminicogamer.jp
@@ -6615,7 +6628,9 @@
 +.dgwav.com
 +.dh44.lol
 +.dhlestudio.com.co
++.diablo.com
 +.diablo3.com
++.diablo4.com
 +.diabloimmortal.com
 +.diabrowser.com
 +.diabrowser.engineering
@@ -8047,6 +8062,7 @@
 +.europeansustainabledesign.net
 +.europeansustainabledesigncouncil.com
 +.europeansustainabledesigncouncil.net
++.europeanwarzoneseries.com
 +.europepmc.org
 +.europornstar.com
 +.eurosexscene.com
@@ -11041,6 +11057,7 @@
 +.hifuli.com
 +.highbolt.net
 +.highdefinitionbeatsbydre.com
++.highmoonstudios.com
 +.highporn.net
 +.highrockmedia.com
 +.hightopnikes.com
@@ -12188,6 +12205,7 @@
 +.inews-api.tvb.com
 +.infinitetoons.com
 +.infinitetube.com
++.infinityward.com
 +.influencersgonewild.com
 +.info-graf.fr
 +.infocert.digital
@@ -13537,6 +13555,7 @@
 +.kindnudist.com
 +.kindteenporn.com
 +.kinescopecdn.net
++.king.com
 +.kingcomix.com
 +.kingdomsalvation.org
 +.kingextre.me
@@ -16000,6 +16019,7 @@
 +.mynavi.jp
 +.mynetname.net
 +.mynike.com
++.mynixos.com
 +.myoctocat.com
 +.myparagliding.com
 +.mypearson.com
@@ -16697,7 +16717,15 @@
 +.nivod.tv
 +.nivodi.tv
 +.nivodz.com
++.nix-community.org
++.nix.dev
++.nix.store
++.nixcon.org
++.nixcon2017.org
++.nixlang.com
 +.nixos.org
++.nixos.wiki
++.nixpkgs.org
 +.niziero.info
 +.njactb.org
 +.njav.tv
@@ -19143,6 +19171,7 @@
 +.ratedgross.com
 +.rateyourmusic.com
 +.rationalwiki.org
++.ravensoftware.com
 +.ravm.tv
 +.raw.githack.com
 +.rawgit.com
@@ -19567,6 +19596,7 @@
 +.rsdlmonitor.com
 +.rsf-chinese.org
 +.rsf.org
++.rsg.ms
 +.rsg.sc
 +.rshb.ru
 +.rsk.co
@@ -19893,6 +19923,8 @@
 +.sbux.com.my
 +.sbuxcard.com
 +.sc-cdn.net
++.sc-gw.com
++.sc-static.net
 +.sc.com
 +.sca-tolo.info
 +.scala-lang.org
@@ -20040,6 +20072,7 @@
 +.seiron-sankei.com
 +.sejie80.com
 +.sekai.colorfulpalette.org
++.sekirothegame.com
 +.seksmet.nl
 +.sekswebsite.nl
 +.sekur1213.guru
@@ -20498,6 +20531,7 @@
 +.sidelinesnews.com
 +.sider.ai
 +.siege-amazon.com
++.sierragames.com
 +.sifangclub.com
 +.sigcomm.org
 +.sigmoidoscopeexam.com
@@ -20626,6 +20660,7 @@
 +.sky.com
 +.skyassets.com
 +.skybet.com
++.skylanders.com
 +.skymansion.net
 +.skymatter.com
 +.skyoceanrescue.com
@@ -20668,6 +20703,7 @@
 +.sldolls.com
 +.sleazyfork.org
 +.sleazyneasy.com
++.sledgehammergames.com
 +.slheng.com
 +.slickvpn.com
 +.slides.com
@@ -20816,6 +20852,7 @@
 +.solarsystem.nasa.gov
 +.solid.ru
 +.solidifi.app
++.solidstate.com
 +.solostudioksale.com
 +.solscan.io
 +.solutionstation.com
@@ -21073,6 +21110,7 @@
 +.sputnikmediabank.com
 +.sputniknews.com
 +.spyjinx.com
++.spyrothedragon.com
 +.sqlite.org
 +.sqlserveronlinux.com
 +.sqool.net
@@ -22353,6 +22391,8 @@
 +.toncenter.com
 +.tonec.com
 +.tonicmovies.com
++.tonyhawk.com
++.tonyhawkthegame.com
 +.toolforge.org
 +.toolmaking-cadcam.com
 +.toomadporn.pro
@@ -22506,6 +22546,7 @@
 +.trendmicro.com
 +.trendsmap.com
 +.trendyporn.com
++.treyarch.com
 +.trezor.io
 +.triballo.net
 +.tribler.org
@@ -24650,6 +24691,7 @@
 +.worldscientific.com
 +.worldsecureemail.com
 +.worldsecuresystems.com
++.worldseriesofwarzone.com
 +.worldsex.com
 +.worldsfastestgamer.net
 +.worldvpn.net
@@ -25552,6 +25594,7 @@
 +.yandex.eu
 +.yandex.fi
 +.yandex.fr
++.yandex.it
 +.yandex.jobs
 +.yandex.kg
 +.yandex.kz
@@ -26695,6 +26738,7 @@ news-client-search.apple.com
 news-client.apple.com
 news-edge.apple.com
 news-events.apple.com
+nix-community.github.io
 notary-submissions-prod.s3-accelerate.amazonaws.com
 notary-submissions-prod.s3.us-west-2.amazonaws.com
 notebooklm-pa.googleapis.com

@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/SocialMedia.txt
 # NAME: SocialMedia
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-14 02:44:48
+# UPDATED: 2026-08-16 02:13:16
 # TOTAL: 633
 +.9ineverse.com
 +.aboutfacebook.com
