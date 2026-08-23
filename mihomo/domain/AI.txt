@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-22 02:21:33
-# TOTAL: 267
+# UPDATED: 2026-08-24 02:14:21
+# TOTAL: 273
 +.agentclientprotocol.com
 +.ai.com
 +.ai.studio
@@ -77,6 +77,7 @@
 +.diffusionbee.com
 +.dify.ai
 +.dola.com
++.dreamgen.com
 +.duck.ai
 +.elevenlabs.com
 +.elevenlabs.io
@@ -118,6 +119,7 @@
 +.jetbrains.ai
 +.jules.google
 +.jules.google.com
++.kimi.ai
 +.kiro.dev
 +.labs.google
 +.labs.google.com
@@ -138,10 +140,13 @@
 +.midjourney.com
 +.minimax.io
 +.mistral.ai
++.moonshot.ai
 +.mozilla.ai
 +.notebook.google.com
 +.notebooklm.google
 +.notebooklm.google.com
++.notegpt.io
++.novelai.net
 +.oaifree.com
 +.oaistatic.com
 +.oaistatsig.com
@@ -186,6 +191,7 @@
 +.stripe.com
 +.synthesia.io
 +.tabnine.com
++.talkai.info
 +.tapnow.ai
 +.themeforest.net
 +.trae.ai
