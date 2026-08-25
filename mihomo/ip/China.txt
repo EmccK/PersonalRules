@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/ip/China.txt
 # NAME: China
 # AUTHOR: YYDS666
-# UPDATED: 2026-08-24 02:14:15
+# UPDATED: 2026-08-26 02:23:31
 # TOTAL: 5386
 1.1.8.0/24
 1.116.0.0/15
