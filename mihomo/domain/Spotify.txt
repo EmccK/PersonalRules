@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Spotify.txt
 # NAME: Spotify
 # AUTHOR: YYDS666
-# UPDATED: 2026-09-18 04:42:05
+# UPDATED: 2026-09-20 03:44:41
 # TOTAL: 28
 +.byspotify.com
 +.lifeatspotify.com
