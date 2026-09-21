@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-09-20 03:44:39
-# TOTAL: 27353
+# UPDATED: 2026-09-22 05:20:46
+# TOTAL: 27355
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -5375,6 +5375,7 @@
 +.chinesegay.org
 +.chinesen.de
 +.chinesenews.net.au
++.chineseposters.net
 +.chineseradioseattle.com
 +.chinesespanking.com
 +.chineseupress.com
@@ -16797,6 +16798,7 @@
 +.norsk.mobi
 +.norton.com
 +.nos.nl
++.note.com
 +.notegpt.io
 +.notepad-plus-plus.org
 +.noticias-rt.com
