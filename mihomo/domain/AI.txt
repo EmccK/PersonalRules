@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-09-26 04:50:57
-# TOTAL: 273
+# UPDATED: 2026-09-28 04:31:57
+# TOTAL: 275
 +.agentclientprotocol.com
 +.ai.com
 +.ai.studio
@@ -87,6 +87,7 @@
 +.events.statsigapi.net
 +.featuregates.org
 +.flow.google
++.flow.google.com
 +.gateway.ai.cloudflare.com
 +.gateway.icloud.com
 +.geller-pa.googleapis.com
@@ -142,6 +143,7 @@
 +.mistral.ai
 +.moonshot.ai
 +.mozilla.ai
++.notebook.google
 +.notebook.google.com
 +.notebooklm.google
 +.notebooklm.google.com

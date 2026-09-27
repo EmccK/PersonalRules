@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/SocialMedia.txt
 # NAME: SocialMedia
 # AUTHOR: YYDS666
-# UPDATED: 2026-09-26 04:50:58
-# TOTAL: 634
+# UPDATED: 2026-09-28 04:31:56
+# TOTAL: 635
 +.9ineverse.com
 +.aboutfacebook.com
 +.accessfacebookfromschool.com
@@ -548,6 +548,7 @@
 +.target.vk.ru
 +.tellapart.com
 +.terragraph.com
++.tfbnw.net
 +.thefacebook.com
 +.thefacebook.net
 +.thefind.com
