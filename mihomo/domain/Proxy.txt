@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-09-30 05:36:08
-# TOTAL: 27363
+# UPDATED: 2026-10-02 06:06:56
+# TOTAL: 27365
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -9495,6 +9495,7 @@
 +.fututrade.com
 +.fututrustee.com
 +.fuxporn.com
++.fuyin116.com
 +.fuzokudx.com
 +.fw.cm
 +.fxcm-chinese.com
@@ -15876,6 +15877,7 @@
 +.muscache.com
 +.muscdn.com
 +.musclegirlflix.com
++.muse.ai
 +.mushroomtrack.com
 +.mushymush.tv
 +.music.amazon.com
