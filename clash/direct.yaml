@@ -3,6 +3,7 @@ payload:
   # 精确域名
   - DOMAIN,shared.oaifree.com
   - DOMAIN,elysia.h-e.top
+  - DOMAIN,u1.029xxj.com
 
   # 域名后缀
   - DOMAIN-SUFFIX,time.windows.com
