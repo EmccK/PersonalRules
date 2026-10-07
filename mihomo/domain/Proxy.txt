@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-10-06 07:25:30
-# TOTAL: 27372
+# UPDATED: 2026-10-08 06:22:20
+# TOTAL: 27401
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -1059,6 +1059,7 @@
 +.ai91porn.cc
 +.aiaa.org
 +.aiasahi.jp
++.aidc.com.tw
 +.aihub.top
 +.aimei133.com
 +.aimsciences.org
@@ -3881,6 +3882,7 @@
 +.blpprofessional.com
 +.blubank.com
 +.blubrry.com
++.blue-plus.net
 +.bluearchive.jp
 +.bluefootcms.com
 +.bluehatil.com
@@ -4874,6 +4876,7 @@
 +.candycrush.com
 +.candycumcity.com
 +.candypleasure.com
++.cangku.moe
 +.caniuse.com
 +.canny.io
 +.canon
@@ -5931,6 +5934,7 @@
 +.cozydrdrebeats.com
 +.cp44.net
 +.cpan.org
++.cpc.com.tw
 +.cpedge.com
 +.cpj.org
 +.cplsb.ru
@@ -6019,6 +6023,7 @@
 +.cs.co
 +.cs4hs.com
 +.csakporno.hu
++.csc.com.tw
 +.csdparty.com
 +.cshive.com
 +.csifund.org
@@ -6633,6 +6638,7 @@
 +.dgaqp.com
 +.dgg.gg
 +.dgwav.com
++.dh.net
 +.dh44.lol
 +.dhlestudio.com.co
 +.diablo.com
@@ -8105,6 +8111,7 @@
 +.exgfvideos.xxx
 +.exgirlfriendmarket.com
 +.exhentai.org
++.eximbank.com.tw
 +.exiporn.com
 +.exmo.com
 +.exmormon.org
@@ -10657,7 +10664,9 @@
 +.hanime.tv
 +.hanime.xxx
 +.hanime.xyz
++.hanime1.com
 +.hanime1.me
++.hanimeone.me
 +.hanr-bao.mom
 +.hanzhen.xmulib.org
 +.hao21.xyz
@@ -11763,6 +11772,7 @@
 +.ibvpn.com
 +.icashpassport.com.mx
 +.iccf.com
++.icdf.org.tw
 +.icedrive.net
 +.icegay.tv
 +.icegaytube.tv
@@ -12219,6 +12229,7 @@
 +.indienudes.com
 +.indies-av.co.jp
 +.indonesiaporn.name
++.indsr.org.tw
 +.industrialtoys.com
 +.inews-api.tvb.com
 +.infinitetoons.com
@@ -12603,6 +12614,7 @@
 +.ip.sb
 +.ip73.com
 +.ipa-iphone.net
++.ipac.global
 +.ipad.co.kr
 +.ipad.de
 +.ipad.host
@@ -12966,6 +12978,7 @@
 +.javcc.cc
 +.javcc.com
 +.javcdn.cc
++.javchu.com
 +.javcl.com
 +.javct.net
 +.javcup.com
@@ -13520,6 +13533,7 @@
 +.khanacademy.org
 +.khangar.net
 +.khatrimaza.org
++.khc.edu.tw
 +.khotruyentranhx.com
 +.kichiku-doujinko.com
 +.kichikuou.com
@@ -13762,6 +13776,7 @@
 +.lamayeshe.com
 +.lamnia.co.uk
 +.lanasbigboobs.com
++.landbank.com.tw
 +.landofhope.tv
 +.langchain.com
 +.langsuirs.com
@@ -14643,6 +14658,7 @@
 +.mate-desktop.org
 +.material.io
 +.mathoverflow.net
++.matichon.co.th
 +.matome-plus.com
 +.matome-plus.net
 +.matrix.org
@@ -15386,6 +15402,7 @@
 +.miraheze.org
 +.mirailab.tech
 +.mirandaicq.com
++.mirdc.org.tw
 +.miro.com
 +.miroguide.com
 +.mirror.xyz
@@ -15508,6 +15525,7 @@
 +.moeerolibrary.com
 +.moefuns.co
 +.moeimg.net
++.moeli-desu.com
 +.moepedia.net
 +.moeshare.cc
 +.moez-m.com
@@ -16176,6 +16194,7 @@
 +.nationalgeographicpartners.com
 +.nationalinterest.org
 +.nationalreview.com
++.nationthailand.com
 +.nationwide.com
 +.nativeincolour.com.au
 +.naturalvoices.com
@@ -16229,6 +16248,7 @@
 +.near.by
 +.nebay.net
 +.neborder.com
++.ned.org
 +.nee4you.com
 +.needforspeed.com
 +.needforspeedboost.com
@@ -16857,6 +16877,7 @@
 +.nsimg.net
 +.nsloon.com
 +.nspk.ru
++.nstc.org.tw
 +.ntc.party
 +.ntd.com
 +.ntd.tv
@@ -18298,6 +18319,7 @@
 +.pokemonwifi.net
 +.pokerstars.com
 +.pokerstars.net
++.poland.tw
 +.politicalchina.org
 +.poloniex.com
 +.polygon.com
@@ -19577,6 +19599,7 @@
 +.rockstargames.com
 +.rockstarnorth.com
 +.rockylinux.org
++.rocmgov.org
 +.rojo.com
 +.roku.com
 +.rokutime.com
@@ -21986,6 +22009,7 @@
 +.texture.com
 +.tfbnw.net
 +.tfc-taiwan.org.tw
++.tfd.org.tw
 +.tferwq.com
 +.tfhub.dev
 +.tfiflve.com
@@ -22680,6 +22704,7 @@
 +.tt1069.com
 +.ttcdn-us.com
 +.tteshop.com
++.ttl.com.tw
 +.ttlivecdn.com
 +.ttoverseaus.net
 +.tttan.com
@@ -22817,6 +22842,7 @@
 +.tweetwally.com
 +.twelve.today
 +.twerkingbutt.com
++.twfhcsec.com.tw
 +.twftp.org
 +.twgov.tw
 +.twgreatdaily.com
@@ -22894,6 +22920,7 @@
 +.txvlog.com
 +.txxx.com
 +.txxx1.com
++.tybio.com.tw
 +.tycool.com
 +.tyler-brown.com
 +.tyms2022.com
@@ -24125,6 +24152,7 @@
 +.vscale.blog
 +.vscale.io
 +.vscale.ru
++.vscc.org.tw
 +.vscode-cdn.net
 +.vscode-unpkg.net
 +.vscode-webview.net
@@ -25310,6 +25338,7 @@
 +.xvxxtube.com
 +.xwbo.com
 +.xx-map.com
++.xx.net
 +.xx9.app
 +.xxbay.com
 +.xxbook.cc
