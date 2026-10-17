@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Proxy.txt
 # NAME: Proxy
 # AUTHOR: YYDS666
-# UPDATED: 2026-10-16 04:39:25
-# TOTAL: 27497
+# UPDATED: 2026-10-18 03:47:39
+# TOTAL: 27503
 +.000webhost.com
 +.01.org
 +.02weqj32.com
@@ -489,6 +489,7 @@
 +.7tb.cc
 +.7tv.app
 +.7tv.io
++.7x24hrs.com
 +.8008206616.com
 +.8111y.top
 +.81jia.tv
@@ -18297,6 +18298,7 @@
 +.playstation
 +.playstation.com
 +.playstation.net
++.playstationnetwork.com
 +.playvalorant.com
 +.playvids.com
 +.playwarcraft3.com
@@ -20056,6 +20058,7 @@
 +.scatville.com
 +.scb.ru
 +.scdn.co
++.scea.com
 +.scene7.com
 +.scenesource.me
 +.scharferporno.com
@@ -21029,6 +21032,7 @@
 +.sony.com.pa
 +.sony.com.pe
 +.sony.com.ph
++.sony.com.py
 +.sony.com.sg
 +.sony.com.sv
 +.sony.com.tr
@@ -21072,8 +21076,10 @@
 +.sonydna.com
 +.sonyentertainmentnetwork.com
 +.sonyglobalsolutions.jp
++.sonyinteractive.com
 +.sonykigyo.jp
 +.sonylatvija.com
++.sonymusic.com.hk
 +.sonynetwork.co.jp
 +.sonypcl.jp
 +.sonypictures.com
