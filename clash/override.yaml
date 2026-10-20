@@ -258,8 +258,9 @@ rules:
   - RULE-SET,AppleCN,DIRECT
   - RULE-SET,Download,DIRECT
   - RULE-SET,XPTV,DIRECT
-  - RULE-SET,China,国内流量
+  # 个人代理规则优先于 China，确保 personal_proxy 中的域名不被国内规则集抢走
   - RULE-SET,personal_proxy,一键连
+  - RULE-SET,China,国内流量
   - RULE-SET,personal_claude,人工智能
   - RULE-SET,AI,人工智能
   - RULE-SET,Telegram,社交平台
