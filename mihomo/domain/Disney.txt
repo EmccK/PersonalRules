@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Disney.txt
 # NAME: Disney
 # AUTHOR: YYDS666
-# UPDATED: 2026-10-20 05:50:13
+# UPDATED: 2026-10-22 04:59:58
 # TOTAL: 224
 +.112263.com
 +.20thcenturystudios.com
