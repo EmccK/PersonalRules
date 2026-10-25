@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Private.txt
 # NAME: Private
 # AUTHOR: YYDS666
-# UPDATED: 2026-10-24 04:45:43
-# TOTAL: 229
+# UPDATED: 2026-10-26 04:07:35
+# TOTAL: 231
 +.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
 +.0.in-addr.arpa
 +.0.openwrt.pool.ntp.org
@@ -224,6 +224,8 @@
 asusrouter.com
 instant.arubanetworks.com
 local.adguard.org
+localhost.weixin.qq.com
+localhost.work.weixin.qq.com
 miwifi.com
 oasisauth.h3c.com
 router.asus.com
