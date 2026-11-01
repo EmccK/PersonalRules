@@ -2,7 +2,7 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/Telegram.txt
 # NAME: Telegram
 # AUTHOR: YYDS666
-# UPDATED: 2026-11-01 04:44:16
+# UPDATED: 2026-11-02 05:26:32
 # TOTAL: 36
 +.ayugram.one
 +.cdn-telegram.org
