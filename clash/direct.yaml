@@ -6,6 +6,7 @@ payload:
   - DOMAIN,u1.029xxj.com
 
   # 域名后缀
+  - DOMAIN-SUFFIX,hellobike.cn
   - DOMAIN-SUFFIX,time.windows.com
   - DOMAIN-SUFFIX,dns.alidns.com
   - DOMAIN-SUFFIX,doh.pub
