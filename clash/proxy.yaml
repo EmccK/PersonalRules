@@ -28,6 +28,9 @@ payload:
 
   # MuMu 模拟器
   - DOMAIN-SUFFIX,mumuplayer.com
+  - DOMAIN-SUFFIX,mumu.163.com
+  - DOMAIN-SUFFIX,mumu.res.netease.com
+  - DOMAIN-SUFFIX,mumu-fe.fp.ps.netease.com
 
   # 域名关键字
   - DOMAIN-KEYWORD,openai

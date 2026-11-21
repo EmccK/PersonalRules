@@ -253,13 +253,13 @@ proxy-groups:
 rules:
   - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((GEOIP,CN)))),REJECT
   - RULE-SET,personal_direct,DIRECT
+  - RULE-SET,personal_proxy,一键连
   - RULE-SET,Private,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,AppleCN,DIRECT
   - RULE-SET,Download,DIRECT
   - RULE-SET,XPTV,DIRECT
   - RULE-SET,China,国内流量
-  - RULE-SET,personal_proxy,一键连
   - RULE-SET,personal_claude,人工智能
   - RULE-SET,AI,人工智能
   - RULE-SET,Telegram,社交平台
