@@ -2,8 +2,8 @@
 # URL: https://raw.githubusercontent.com/666OS/rules/release/mihomo/domain/AI.txt
 # NAME: AI
 # AUTHOR: YYDS666
-# UPDATED: 2026-11-20 07:59:13
-# TOTAL: 312
+# UPDATED: 2026-11-22 06:31:06
+# TOTAL: 313
 +.agentclientprotocol.com
 +.ai.com
 +.ai.studio
@@ -99,6 +99,7 @@
 +.duck.ai
 +.elevenlabs.com
 +.elevenlabs.io
++.elevenlabsusercontent.com
 +.envato-static.com
 +.envato.com
 +.envatousercontent.com
