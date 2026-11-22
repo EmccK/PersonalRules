@@ -82,6 +82,8 @@ dns:
     - rule-set:Direct
     - rule-set:Private
     - rule-set:China
+    # cloudflared 只在启动时解析一次边缘节点，拿到假地址的话，假地址表一重置隧道就再也连不上
+    - +.argotunnel.com
     # QQ 机器人及腾讯回调、媒体资源使用真实 DNS 解析
     - +.qq.com
     - +.sgroup.qq.com
